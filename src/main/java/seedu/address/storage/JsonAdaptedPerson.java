@@ -15,6 +15,7 @@ import seedu.address.model.person.Cost;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Note;
+import seedu.address.model.person.Parent;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
 import seedu.address.model.person.Student;
@@ -128,7 +129,9 @@ class JsonAdaptedPerson {
             modelCost = new Cost(cost);
         }
 
-        return new Student(modelName, modelPhone, modelEmail, modelAddress, modelNote, modelCost, modelTags);
+       // this line makes every sample data a parent
+
+        return new Parent(modelName, modelPhone, modelEmail, modelAddress, modelNote, modelCost, modelTags);
     }
 
 }

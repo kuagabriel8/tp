@@ -7,6 +7,7 @@ import seedu.address.model.person.Address;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Note;
+import seedu.address.model.person.Parent;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
 import seedu.address.model.person.Student;
@@ -110,8 +111,8 @@ public class PersonBuilder {
         return this;
     }
 
-    public Person build() {
-        return new Student(name, phone, email, address, note, cost, tags);
+    public Person build() { //no usages and changing from student to parent did nothing
+        return new Parent(name, phone, email, address, note, cost, tags);
     }
 
     /**
